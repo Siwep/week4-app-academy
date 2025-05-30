@@ -10,6 +10,9 @@
     <h1>JavaScript week 4</h1>
 
     <!--Lesson 1-->
+
+    
+
     <div class="Lesson">
         <h3>Lesson 1: Show text on page</h3>
 
@@ -29,7 +32,7 @@
     <!--Lesson 2 -->
 
     <div class="lesson">
-        <h2>Lesson: Variables(Text Storage)</h2>
+        <h2>Lesson 2: Variables(Text Storage)</h2>
 
         <h2 id="heading2">Text will change</h2>
         <p id="text2">More text here</p>
@@ -43,12 +46,61 @@
 
                 document.getElementById("heading2").innerHTML = message1;
                 document.getElementById("text2").innerHTML = message2 + message3;
-                
+
                 
             }
         </script>
+    </div>
+
+<!--Lesson 3-->
+
+    <div class="lesson">
+        <h3>Lesson 3: Variables (Numbers)</h3>
+
+        <p id="math">Math equation will show up</p>
+        <button onclick="lesson3()">Do Math</button>
+
+        <script>
+            function lesson3() {
+                var num1 = 7;
+                var num2 = 10;
+
+                document.getElementById("math").innerHTML = num1 + " x " + num2 + " = " + (num1 * num2);      
+                }
+        </script>
+    
+    </div>
+
+ <!--Lesson 4-->
+
+    <div class="lesson">
+        <h3>Lesson 4: If/Else Decisions (Conditionals)</h3>
+
+        <input type="password" id="password" placeholder="Try: 007">
+        <button onclick="lesson4()">Check Password</button>
+        <div class="result" id="result4">Enter password and click</div>
+
+        <script>
+           function lesson4() {
+           var userPassword = document.getElementById("password").value;
+           
+            if(userPassword == "007") {
+                document.getElementById("result4").innerHTML = "Correct password. You are logged in!";
+
+            } 
+            else {
+                document.getElementById("result4").innerHTML = "Wrong password! Please try again.";
+            }
+        }
+
+        </script>
+    </div>
+
+<!--Lesson 5-->
+    <div class="lesson">
+        <h3>Lesson 5: </h3>
 
     </div>
 
 </body>
-</html>
+</html> 
