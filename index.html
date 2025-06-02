@@ -14,7 +14,7 @@
     
 
     <div class="Lesson">
-        <h3>Lesson 1: Show text on page</h3>
+        <h2>Lesson 1: Show text on page</h2>
 
         <h2 id="heading1">Hello</h2>
         <p id="text1">world</p>
@@ -55,7 +55,7 @@
 <!--Lesson 3-->
 
     <div class="lesson">
-        <h3>Lesson 3: Variables (Numbers)</h3>
+        <h2>Lesson 3: Variables (Numbers)</h2>
 
         <p id="math">Math equation will show up</p>
         <button onclick="lesson3()">Do Math</button>
@@ -74,7 +74,7 @@
  <!--Lesson 4-->
 
     <div class="lesson">
-        <h3>Lesson 4: If/Else Decisions (Conditionals)</h3>
+        <h2>Lesson 4: If/Else Decisions (Conditionals)</h2>
 
         <input type="password" id="password" placeholder="Try: 007">
         <button onclick="lesson4()">Check Password</button>
@@ -98,7 +98,7 @@
 
 <!--Lesson 5-->
     <div class="lesson">
-        <h3>Lesson 5:Click events</h3>
+        <h2>Lesson 5:Click events</h2>
 
         <h2 onclick="this.innerHTML='is awesome!' ">JavaScript</h2>
 
@@ -108,7 +108,7 @@
 
 <!--Lesson 6-->
     <div class="lesson">
-        <h3>Lesson 6: Toggle Functions</h3>
+        <h2>Lesson 6: Toggle Functions</h2>
 
         <h2 id="toggle" onclick="toggleText()">JavaScript</h2>
         <p>Click repeatedly to toggle!</p>
@@ -190,6 +190,36 @@
         }
 
     </script>
+
+<!--Lesson10-->
+
+<div class="lesson">
+    <h2>Lesson10: Mini Project - Login form Part 1</h2>
+    <p><strong>Concept:</strong>Getting user input from form elements</p>
+
+    <form>
+        <label for="usernameInput10">Username:</label>
+        <input type="text" id="usernameInput10"/><br><br>
+
+        <label for="passwordInput10">Password:</label>
+        <input type="password" id="passwordInput10" /> <br><br>
+
+        <button type="button" onclick="verifyUser10()">Get Input Values</button>
+    </form>
+
+    <div class="output" id="message10">Enter username and password, then click button</div>
+
+</div>
+<script>
+function verifyUser10() {
+    var username = document.getElementById("usernameInput10").value;
+    var password = document.getElementById("passwordInput10").value;
+
+    document.getElementById("message10").innerHTML = "Username entered: " +
+    username + "<br>Password entered: " + password;
+}
+
+</script>
 
 
 </div>
